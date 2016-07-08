@@ -5,7 +5,7 @@ var toDoList = document.querySelector('#todo-list')
 var listCounter = document.querySelector('#list-counter')
 var completedTasks = 0
 
-// register clicks and toggle classes
+//Listen in on the label being clicked
 label.addEventListener("click", function() {
   //If the search has a value, create a list item
   if (search.value.length > 0) {
@@ -82,7 +82,7 @@ var checkLogo = function () {
   if (toDoList.innerHTML.includes('li') === true) {
     logo.classList.add("logo-small")
 
-    //TODO: Make the logo decrease in size with each added list item
+    //Make the logo decrease in size with each added list item
     var smallLogoH1 = document.querySelector('.logo-small').getElementsByTagName('h1')
     var listItems = toDoList.getElementsByTagName('li')
     fontSize = fontSize - (5 * listItems.length)
