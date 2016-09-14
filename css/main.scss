@@ -62,7 +62,7 @@ p {
 #todo-list {
   padding: 0;
   max-height: 470px;
-  overflow: scroll;
+  // overflow: scroll;
 }
 
 .todo-items {
@@ -70,7 +70,7 @@ p {
   font-weight: bold;
   border-top: 1px solid $gray;
   padding: 10px;
-  overflow: scroll;
+  word-wrap: break-word;
   display: flex;
   transition: all 0.2s 0s ease;
 
@@ -162,9 +162,7 @@ p {
     background-color: rgba(0, 0, 0, 0);
     color: $black;
     font-size: 18px;
-    backface-visibility: none;
     border-radius: 0;
-    transition: left 0;
 }
 
 #input input:focus {
